@@ -1,31 +1,103 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Próximo Feriado 📅
 
-## Available Scripts
+Uma aplicação web em React com TypeScript que mostra o próximo feriado basead- `npm run eject` - Ejeta as configurações do Create React Applocalização geográfica.
 
-In the project directory, you can run:
+## 📋 Sobre o Projeto
 
-### `npm start`
+Este projeto foi desenvolvido como parte do meu aprendizado em TypeScript. A aplicação:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 📍 Utiliza geolocalização para identificar sua cidade e estado
+- 🎉 Consulta uma API de feriados brasileiros
+- ⏰ Calcula quantos dias faltam para o próximo feriado
+- 🌐 Exibe informações detalhadas sobre o feriado
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+- **React** - Biblioteca para construção da interface
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Axios** - Cliente HTTP para requisições à API
+- **Moment.js** - Biblioteca para manipulação de datas
+- **Geolocation API** - Para obter coordenadas do usuário
+- **Geocode API** - Para converter coordenadas em cidade/estado
+- **Calendario.com.br API** - Para consultar feriados brasileiros
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Funcionalidades
 
-### `npm run build`
+- ✅ Detecção automática da localização do usuário
+- ✅ Consulta de feriados específicos por cidade/estado
+- ✅ Cálculo da diferença de dias até o próximo feriado
+- ✅ Interface simples e intuitiva
+- ✅ Tratamento de erros de geolocalização
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Instalação e Execução
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (versão 12 ou superior)
+- npm ou yarn
+
+### Passos
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/RafaelAlvesDS/proximo-feriado.git
+cd proximo-feriado
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Execute a aplicação:
+```bash
+npm start
+```
+
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## 🎯 Conceitos de TypeScript Aplicados
+
+Durante o desenvolvimento deste projeto, pratiquei os seguintes conceitos de TypeScript:
+
+- **Interfaces**: Definição da interface `Feriado` para tipagem dos dados
+- **Tipagem de Estado**: Uso do `useState<Feriado>` com tipagem específica
+- **Tipagem de APIs**: Declaração de tipos para respostas de APIs externas
+- **Hooks com TypeScript**: Implementação do `useEffect` com tipagem adequada
+- **Event Handling**: Tipagem de eventos de geolocalização
+- **Manipulação de Arrays**: Uso de métodos como `filter()` com tipagem
+
+## 🔧 Estrutura do Projeto
+
+```
+src/
+├── App.tsx          # Componente principal da aplicação
+├── App.css          # Estilos do componente App
+├── index.tsx        # Ponto de entrada da aplicação
+├── index.css        # Estilos globais
+└── ...
+```
+
+## 📱 Como Usar
+
+1. Ao acessar a aplicação, permita o acesso à sua localização
+2. A aplicação automaticamente detectará sua cidade e estado
+3. Será exibido o próximo feriado da sua região
+4. Você verá a data e quantos dias faltam
+
+## ⚠️ Observações
+
+- É necessário permitir o acesso à geolocalização no navegador
+- A aplicação funciona apenas para feriados brasileiros
+- Alguns feriados podem variar por município
+
+## 📄 Scripts Disponíveis
+
+- `npm start` - Executa a aplicação em modo de desenvolvimento
+
+- `npm test` - Executa os testes
+
+- `npm run build` - Gera build de produção
 
 ### `npm run eject`
 
@@ -37,8 +109,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 🤝 Contribuição
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este é um projeto de aprendizado, mas sugestões e melhorias são sempre bem-vindas!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+Desenvolvido com ❤️ durante meus estudos de TypeScript
