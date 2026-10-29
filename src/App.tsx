@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import {useEffect} from 'react';
 import axios from 'axios';
 import moment from 'moment'
-const TOKEN = "cmFmYWVsLmFsdmVzLmRzQGdtYWlsLmNvbSZoYXNoPTUxODUxNDM0";
+const TOKEN = process.env.REACT_APP_CALENDARIO_TOKEN;
 
 interface Feriado{
   nome: string

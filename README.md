@@ -20,6 +20,6 @@ npm install
 npm start
 ```
 
-Abre em `http://localhost:3000`. A API do calendario.com.br exige um token, que hoje está direto em `src/App.tsx` (constante `TOKEN`). Troque pelo seu antes de usar.
+Abre em `http://localhost:3000`. A API do calendario.com.br exige um token. Copie o `.env.example` para `.env` e preencha `REACT_APP_CALENDARIO_TOKEN`. Como o Create React App embute essa variável no JavaScript do build, o token fica visível para quem abrir o site publicado.
 
 Criado com Create React App. O `README.old.md` é o texto padrão dele.
